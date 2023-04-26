@@ -6,6 +6,7 @@ public class Main {
         task4();
         task5();
         task6();
+        task7();
     }
 
     public static void task1() {
@@ -112,14 +113,35 @@ public class Main {
 
     public static void task7() {
         System.out.println("Задача 7");
-        int two = 2;
-        int one = 1;
-        int three = 3;
-        if (two < one) {
-            System.out.println("VVV");
+        int one = 1234;
+        int two = 54;
+        int three = 267;
+        if (two < one)
+          if (one>three) {
+              System.out.println("максимальное число" + one);
+          }
+          else if (three>one){
+              System.out.println("максимальное число" + three);}
+          else {
+              System.out.println("число " + one + " и " + three + " равны" );}
+        else if (two > one) {
+            if (two > three){
+                System.out.println("максимальное число " + two);}
+            else if (three > two) {
+                System.out.println("максимальное число " + three);}
+            else{
+                System.out.println("число " + two + " и " + three + " равны" );
+            }
+            if (one > three)
+                System.out.println("максимальное число " + one);}
+        else if  (three > one) {
+                System.out.println("максимальное число " + three);}
+        else {
+                System.out.println("все числа равны" + two);}
 
-        } else {
-            System.out.println("FFF");
+
+            }
         }
-    }
-}
+
+
+
